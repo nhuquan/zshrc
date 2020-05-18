@@ -5,7 +5,9 @@ sudo apt install -y \
   curl \
   wget \
   zsh \
-  neovim
+  neovim \
+  gnome-shell-extension-dashtodock \
+  gnome-tweak-tool
 
 # Install Vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
