@@ -1,3 +1,4 @@
+# Update and upgrade
 sudo apt update -y && sudo apt upgrade -y
 
 # Install apps
@@ -24,5 +25,14 @@ rm bat*.deb
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+# Install dash-to-dock
+wget https://extensions.gnome.org/review/download/9189.shell-extension.zip
+
+mkdir -p ~/.local/share/gnome-shell/extensions
+
+unzip *shell-extension.zip -d ~/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/
+
+# Update and upgrade
 sudo apt update -y && sudo apt upgrade -y
+
 
