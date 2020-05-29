@@ -3,7 +3,6 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-#PS1="$(id -un)@$(hostname): "
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -152,3 +151,4 @@ alias cat='bat'
 #export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_PREVIEW_COMMAND="bat --style=numbers,changes --wrap never --color always {} || cat {} || tree -C {}"
 export FZF_CTRL_T_OPTS="--min-height 30 --preview-window down:60% --preview '($FZF_PREVIEW_COMMAND) 2> /dev/null'"
+#PS1="$(id -un)@$(hostname): "
