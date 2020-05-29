@@ -6,15 +6,19 @@ sudo apt install -y \
   curl \
   wget \
   zsh \
-  neovim \
   gnome-shell-extension-dashtodock \
   gnome-tweak-tool
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 cat .zshrc > $HOME/.zshrc
 chsh -s $(which zsh)
+
+# Install neovim
+curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+chmod u+x nvim.appimage
+sudo mv nvim.appimage /usr/local/bin/nvim
+nvim --version
 
 # Install bat
 wget https://github.com/sharkdp/bat/releases/download/v0.15.1/bat_0.15.1_amd64.deb
