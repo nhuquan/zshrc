@@ -152,3 +152,7 @@ alias cat='bat'
 export FZF_PREVIEW_COMMAND="bat --style=numbers,changes --wrap never --color always {} || cat {} || tree -C {}"
 export FZF_CTRL_T_OPTS="--min-height 30 --preview-window down:60% --preview '($FZF_PREVIEW_COMMAND) 2> /dev/null'"
 #PS1="$(id -un)@$(hostname): "
+
+# BAT
+
+export BAT_THEME="ansi-light"
