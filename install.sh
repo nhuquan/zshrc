@@ -36,6 +36,13 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install node
 
+# Install GO
+wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
+sudo tar -C /usr/local/ go1.14*tar.gz
+export PATH=$PATH:/usr/local/go/bin
+go version
+
+
 # Update and upgrade
 sudo apt update -y && sudo apt upgrade -y
 

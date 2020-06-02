@@ -118,6 +118,8 @@ path+=("$ANDROID_HOME/cmdline-tools/latest/bin")
 
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
+path+=("/usr/local/go/bin")
+path+=("$GOBIN")
 
 export PATH
 
