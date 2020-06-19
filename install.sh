@@ -38,7 +38,9 @@ nvm install node
 
 # Install GO
 wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
-sudo tar -C /usr/local/ go1.14*tar.gz
+tar xvf go1.14*tar.gz
+rm go1.14*.tar.gz
+sudo mv go /usr/local/go
 export PATH=$PATH:/usr/local/go/bin
 go version
 
